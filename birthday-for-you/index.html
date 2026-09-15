@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ถึงเธอ ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- หน้าแรก -->
+    <section class="hero">
+
+        <p class="small-title">A LITTLE MESSAGE FOR YOU</p>
+
+        <h1>ถึงดิววววว ♡</h1>
+
+        <p class="intro">
+            มีอะไรบางอย่างที่แพรวอยากให้ดิวดู
+        </p>
+
+        <button onclick="openWebsite()">
+            เปิดดูจิๆ ♡
+        </button>
+
+    </section>
+
+
+    <!-- วันเกิด -->
+    <section class="section birthday">
+
+        <p class="section-label">BIRTHDAY</p>
+
+        <h2>สุขสันต์วันเกิดนะคะที่รัก 🎂</h2>
+
+        <p>
+            แพรวขอให้ดิวมีความสุขมากๆนะ ขอให้ชีวิตในวัย 21ปี ของดิวเต็มไปด้วยรอยยิ้มและความสุข
+            <br>
+            ขอให้สุขภาพร่างกายแข็งแรงง
+            ทุกอย่างในชีวิตเป็นแบบที่วาดฝันและตั้งใจไว้นะ 
+            แต่ก็อาจจะมี 1 ใน 365วัน ที่ทุกข์หรือบางอย่างอาจจะไม่ได้เป็นตามที่คิดไว้
+            ดิวก็อย่าเพิ่งท้อน้าา แพรวจะอยู่ข้างๆดิวเองงง
+        </p>
+
+    </section>
+
+
+    <!-- รูปความทรงจำ -->
+    <section class="section">
+
+        <p class="section-label">OUR LITTLE MEMORIES</p>
+
+        <h2>ร้องไห้อยู่รึเปล่าา อย่าร้องน้าาา มาดูนี่ดีกว่าาา</h2>
+
+        <div class="memory-grid">
+
+            <div class="memory-card">
+               <img src="images/photo1.jpg" onclick="openImage(this)">
+                <p>ไหนลองยิ้มแบบนี้สิ ♡</p>
+            </div>
+
+            <div class="memory-card">
+                <img src="images/photo2.jpg" onclick="openImage(this)">
+                <p>นี่ๆเค้าอยากให้ชีวิตดิวสดใสแบบนี้เบยยย </p>
+            </div>
+
+            <div class="memory-card">
+                <img src="images/photo3.jpg" onclick="openImage(this)">
+                <p>ไม่เอาแบบนี้น้าาา ตึงจุงเบย</p>
+            </div>
+
+            <div class="memory-card">
+                <img src="images/photo4.jpg" onclick="openImage(this)">
+                <p>ช่ายๆต้องแบบนิ้แหละะ อยู่ข้างๆกันแบบนี้ไปเรื่อยๆเลยยย</p>
+            </div>
+
+        </div>
+
+
+
+    <!-- Birthday Cake -->
+
+<section class="cake-section">
+
+    <p class="section-label">MAKE A WISH</p>
+
+    <h2>อธิษฐานก่อนนะ 🎂</h2>
+
+    <p class="cake-text">
+        วันเกิดปีนี้ ขอให้ทุกคำอธิษฐานของเธอเป็นจริงนะ
+    </p>
+
+
+    <div class="cake">
+
+        <!-- เทียน 3 เล่ม -->
+
+        <div class="candle candle-one">
+            <div class="flame"></div>
+        </div>
+
+        <div class="candle candle-two">
+            <div class="flame"></div>
+        </div>
+
+        <div class="candle candle-three">
+            <div class="flame"></div>
+        </div>
+
+
+        <!-- เค้ก -->
+
+        <div class="cake-top"></div>
+
+        <div class="cake-body">
+
+            <div class="cake-decoration"></div>
+            <div class="cake-decoration"></div>
+            <div class="cake-decoration"></div>
+
+        </div>
+
+    </div>
+
+
+    <button id="blowButton" onclick="blowCandles()">
+        เป่าเทียน 🕯️
+    </button>
+
+
+
+
+</section>
+
+
+    <!-- เซอร์ไพรส์ -->
+    <section class="section surprise">
+
+        <p class="section-label">ONE LAST THING...</p>
+
+        <h2>ยังมีอะไรอีกอย่าง 🎁</h2>
+
+        <button onclick="showSurprise()">
+            เปิดดู
+        </button>
+
+        <div id="surprise-message" class="hidden-surprise">
+
+            <h3>เซอร์ไพรส์! 💚</h3>
+
+            <p>
+                ของขวัญของเธอไม่ได้อยู่ในเว็บนะ
+            </p>
+
+            <p>
+                ลองมองข้าง ๆ ตัวดูสิ 👀
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ท้ายเว็บ -->
+    <footer>
+
+        <p>
+            Made with love ♡
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+    <!-- กล่องรูปใหญ่ -->
+
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+
+    <span class="close-image">×</span>
+
+    <img id="bigImage">
+
+</div>
+
+</body>
+
+</html>
